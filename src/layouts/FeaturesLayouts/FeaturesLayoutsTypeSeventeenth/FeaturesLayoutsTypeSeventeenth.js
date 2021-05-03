@@ -28,7 +28,7 @@ class FeaturesLayoutsTypeSeventeenth extends Component {
       {
         title: "Bulk",
         description:
-          "Able import member’s information in bulk and generate certificate automatically.",
+          "Able import member’s information in bulk and generate certificate.",
         icon: <Group fill="#ffffff" />,
       },
       {
@@ -48,7 +48,7 @@ class FeaturesLayoutsTypeSeventeenth extends Component {
         icon: <Group fill="#ffffff" />,
       },
       {
-        title: "WCB Connected To Web",
+        title: "Admin To Website",
         description: "WCS shall be connected to IEM Sarawak website",
         icon: <Email fill="#ffffff" />,
       },

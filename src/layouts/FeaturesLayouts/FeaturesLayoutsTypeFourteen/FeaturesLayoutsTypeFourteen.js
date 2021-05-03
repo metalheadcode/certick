@@ -51,7 +51,7 @@ function FeaturesLayoutsTypeFourteen(props) {
                         top: "40%",
                       }}
                     >
-                      Video In Progress...
+                      the video will appear here
                     </h1>
                   </div>
                 </Fade>
