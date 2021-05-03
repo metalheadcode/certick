@@ -1,0 +1,58 @@
+.Frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+  background-color: #dfe4ea;
+  border-radius: 50%;
+}
+
+/* props.shape */
+.Frame.square {
+  border-radius: 8px !important;
+}
+
+/* props.variant  */
+.Frame.large {
+  width: 64px;
+  height: 64px;
+}
+
+.Frame.normal {
+  width: 48px;
+  height: 48px;
+}
+
+.Frame.small {
+  width: 32px;
+  height: 32px;
+}
+
+/* props.color  */
+.Frame.primary {
+  background-color: #345dee;
+}
+.Frame.secondary {
+  background-color: #ee3465;
+}
+.Frame.white {
+  background-color: #ffffff;
+}
+
+.frame-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.frame-wrapper > div {
+  margin-right: 15px;
+}
+
+.dark .Frame {
+  background-color: #121b3f !important;
+}
+
+.dark .Frame svg path {
+  fill: #fff;
+}
