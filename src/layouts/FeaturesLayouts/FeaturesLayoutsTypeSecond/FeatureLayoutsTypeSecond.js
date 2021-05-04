@@ -1,5 +1,5 @@
 import React from "react"
-import style from "./FeatureLayoutsTypeSecond.module.css"
+import classes from "./FeatureLayoutsTypeSecond.module.css"
 import Feature from "./Features/Features"
 import { Container, Row, Col } from "react-bootstrap"
 import { Fade } from "react-awesome-reveal"
@@ -18,20 +18,20 @@ const FeaturesLayoutsTypeSecond = ({ dark }) => {
   return (
     <>
       <section
-        className={`section ${style.features} ${
-          dark ? `dark ${style.dark}` : ""
+        className={`section ${classes.features} ${
+          dark ? `dark ${classes.dark}` : ""
         }`}
       >
-        <div className={`${style.gridWrapper}`}>
+        <div className={`${classes.gridWrapper}`}>
           <Container>
             <Row>
               {/* left side of the page  */}
-              <Col lg="6" md="7" className={style.leftColumn}>
+              <Col lg="6" md="7" className={classes.leftColumn}>
                 <Fade top trigerOnce={true}>
-                  <h1 className={`title ${style.title}`}>{title}</h1>
+                  <h1 className={`title ${classes.title}`}>{title}</h1>
                 </Fade>
                 <Fade top delay={50} trigerOnce={true}>
-                  <p className={`normal-text ${style.description}`}>
+                  <p className={`normal-text ${classes.description}`}>
                     {description}
                   </p>
                 </Fade>
@@ -40,7 +40,7 @@ const FeaturesLayoutsTypeSecond = ({ dark }) => {
               </Col>
 
               {/* right side of the page  */}
-              <Col lg="6" md="5" className={style.rightColumn}>
+              <Col lg="6" md="5" className={classes.rightColumn}>
                 <Fade delay={50} triggerOnce={true}>
                   <img src={DashboardImage} alt="" width="990" height="610" />
                 </Fade>
