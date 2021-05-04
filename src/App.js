@@ -1,22 +1,19 @@
 import React from "react"
-import CTALayoutsTypeTwelve from "./layouts/CTALayouts/CTALayoutsTypeTwelve/CTALayoutsTypeTwelve"
-import FeaturesLayoutsTypeFourteen from "./layouts/FeaturesLayouts/FeaturesLayoutsTypeFourteen/FeaturesLayoutsTypeFourteen"
-import FeaturesLayoutsTypeNinth from "./layouts/FeaturesLayouts/FeaturesLayoutsTypeNinth/FeaturesLayoutsTypeNinth"
-import FeaturesLayoutsTypeSecond from "./layouts/FeaturesLayouts/FeaturesLayoutsTypeSecond/FeatureLayoutsTypeSecond"
-import FeaturesLayoutsTypeSeventeenth from "./layouts/FeaturesLayouts/FeaturesLayoutsTypeSeventeenth/FeaturesLayoutsTypeSeventeenth"
-import FeaturesLayoutsTypeTenth from "./layouts/FeaturesLayouts/FeaturesLayoutsTypeTenth/FeaturesLayoutsTypeTenth"
-import FeaturesLayoutsTypeTwelve from "./layouts/FeaturesLayouts/FeaturesLayoutsTypeTwelve/FeaturesLayoutsTypeTwelve"
+import { Route, Switch } from "react-router-dom"
+import FootersLayoutsTypeNinth from "./layouts/FooterLayouts/FootersLayoutsTypeNinth/FootersLayoutsTypeNinth"
+import Header from "./layouts/Header/Header.js"
+import Homescreen from "./screens/Homescreen"
 
 function App() {
   return (
     <div className="App">
-      <FeaturesLayoutsTypeSecond dark={false} />
-      <FeaturesLayoutsTypeNinth dark={true} />
-      <FeaturesLayoutsTypeTwelve dark={false} />
-      <FeaturesLayoutsTypeSeventeenth dark={true} />
-      <FeaturesLayoutsTypeFourteen />
-      <FeaturesLayoutsTypeTenth dark={true} />
-      <CTALayoutsTypeTwelve dark={false} />
+      <Header />
+      <Switch>
+        <Route exact path="/">
+          <Homescreen />
+        </Route>
+      </Switch>
+      <FootersLayoutsTypeNinth />
     </div>
   )
 }
