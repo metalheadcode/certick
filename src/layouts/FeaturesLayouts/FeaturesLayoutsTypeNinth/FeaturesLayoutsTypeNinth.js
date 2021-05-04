@@ -17,6 +17,7 @@ function FeaturesLayoutsTypeNinth(props) {
         className={`section ${classes.features} ${
           props.dark ? `dark ${classes.dark}` : ""
         }`}
+        id="why"
       >
         <div className={classes.gridWrapper}>
           <Container>

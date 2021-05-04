@@ -17,6 +17,7 @@ function FeaturesLayoutsTypeFourteen(props) {
         className={`section ${classes.features} ${
           props.dark ? `dark ${classes.dark}` : ""
         }`}
+        id="how"
       >
         <div className={classes.gridWrapper}>
           <Container>
