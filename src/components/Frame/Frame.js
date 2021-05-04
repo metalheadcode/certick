@@ -8,7 +8,7 @@ const Frame = ({ shape, color, variant, size, children }) => {
       style={{
         width: `${size}px`,
         height: `${size}px`,
-        backgroundColor: `${color}px`,
+        backgroundColor: `${color}`,
       }}
     >
       {children}
