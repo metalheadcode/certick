@@ -1,0 +1,154 @@
+.Button {
+  display: inline-block;
+  width: max-content;
+  padding: 0;
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+
+  border-radius: 8px;
+
+  outline: 0 !important;
+  -webkit-appearance: none;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 2px solid transparent;
+  cursor: pointer;
+  text-decoration: none !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.Button span {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+/*COLORS*/
+.Button.primary {
+  background-color: #345dee;
+  color: #ffffff;
+}
+.Button.primary:hover {
+  background-color: #6383f2;
+  border-color: #6383f2;
+}
+.Button.secondary {
+  background-color: #ee3465;
+  border-color: #ee3465;
+  color: #ffffff;
+}
+.Button.secondary:hover {
+  background-color: #f26389;
+  border-color: #f26389;
+}
+.Button.neutral {
+  background-color: #dfe4ea;
+  color: #18214d;
+}
+.Button.neutral:hover {
+  background-color: #eef1f4;
+}
+.Button.outline {
+  background-color: transparent;
+}
+.Button.outline.primary {
+  color: #345dee;
+  border: 2px solid #345dee;
+}
+.Button.outline.primary:hover {
+  color: #6383f2;
+  border: 2px solid #6383f2;
+  background-color: transparent;
+}
+.Button.outline.secondary {
+  color: #ee3465;
+  border: 2px solid #ee3465;
+}
+.Button.outline.secondary:hover {
+  color: #f26389;
+  border: 2px solid #f26389;
+  background-color: transparent;
+}
+.Button.outline.neutral {
+  color: #18214d;
+  border: 2px solid #dfe4ea;
+}
+.Button.outline.neutral:hover {
+  color: #243274;
+  border: 2px solid #eef1f4;
+  background-color: transparent;
+}
+.dark .Button.outline svg path {
+  fill: #ffffff;
+}
+.dark .Button.outline.neutral {
+  color: #ffffff;
+}
+.dark .Button.outline.neutral:hover {
+  color: #d8d8d8;
+}
+/*end colors*/
+
+.Button.simple {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  border: 2px solid transparent;
+}
+.Button.simple span {
+  justify-content: center;
+}
+.Button.left-icon {
+  display: flex;
+  align-items: center;
+}
+.Button.left-icon svg {
+  margin-right: 14px;
+}
+.Button.right-icon {
+  display: flex;
+  align-items: center;
+  grid-gap: 14px;
+}
+.Button.right-icon svg {
+  margin-left: 14px;
+}
+.Button.small.right-icon svg {
+  margin-left: 10px;
+}
+.Button.small.left-icon svg {
+  margin-right: 10px;
+}
+.Button.large {
+  padding: 0 20px;
+  height: 60px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+.Button.big {
+  height: 50px;
+  padding: 0 16px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+}
+
+.Button.small {
+  padding: 0 15px;
+  height: 40px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+}
+
+@media screen and (max-width: 450px) {
+  .Button {
+    height: 50px !important;
+  }
+}

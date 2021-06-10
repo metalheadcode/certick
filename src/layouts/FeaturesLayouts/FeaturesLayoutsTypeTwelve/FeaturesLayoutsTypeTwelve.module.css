@@ -1,0 +1,48 @@
+.features {
+  padding: 0;
+}
+.containerFluid {
+  position: relative;
+  padding: 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  background-color: transparent;
+  background-size: cover;
+}
+
+.dark.containerFluid {
+  background-color: #1c275a !important;
+}
+
+@media screen and (max-width: 768px) {
+  .videoWrapper {
+    height: 500px;
+  }
+  .buttons {
+    margin-top: 70px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .videoWrapper {
+    height: 450px;
+  }
+  .containerFluid {
+    padding: 0;
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+  .buttons {
+    margin-top: 65px;
+  }
+
+  .description {
+    max-width: 220px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .videoWrapper {
+    height: 350px;
+  }
+}
