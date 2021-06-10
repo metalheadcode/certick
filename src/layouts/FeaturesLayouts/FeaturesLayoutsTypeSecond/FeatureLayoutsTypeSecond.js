@@ -1,20 +1,20 @@
-import React from "react"
-import classes from "./FeatureLayoutsTypeSecond.module.css"
-import Feature from "./Features/Features"
-import { Container, Row, Col } from "react-bootstrap"
-import { Fade } from "react-awesome-reveal"
-import { Admin, Approve, Certified } from "../../../components/Icons/Icons"
-import DashboardImage from "./../../../img/dashboard.webp"
+import React from "react";
+import classes from "./FeatureLayoutsTypeSecond.module.css";
+import Feature from "./Features/Features";
+import { Container, Row, Col } from "react-bootstrap";
+import { Fade } from "react-awesome-reveal";
+import { Admin, Approve, Certified } from "../../../components/Icons/Icons";
+import DashboardImage from "./../../../img/dashboard.png";
 
 const FeaturesLayoutsTypeSecond = ({ dark }) => {
-  const title = "All Certificates In One Place."
+  const title = "All Certificates In One Place.";
   const description =
-    "We are providing a Web-based Certification System (WCS) to IEM at the first place, but since we got requested by others NGO, now we are open to others!"
+    "We are providing a Web-based Certification System (WCS) to IEM at the first place, but since we got requested by others NGO, now we are open to others!";
   const features = [
     { id: 1, text: "Certificates Management", icon: <Certified /> },
     { id: 2, text: "Legit Approval", icon: <Approve /> },
     { id: 3, text: "User Administration", icon: <Admin /> },
-  ]
+  ];
   return (
     <>
       <section
@@ -50,7 +50,7 @@ const FeaturesLayoutsTypeSecond = ({ dark }) => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default FeaturesLayoutsTypeSecond
+export default FeaturesLayoutsTypeSecond;

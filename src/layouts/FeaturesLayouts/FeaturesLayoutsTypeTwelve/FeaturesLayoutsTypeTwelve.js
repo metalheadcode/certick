@@ -1,17 +1,17 @@
-import React, { useState } from "react"
-import { Col, Container, Row } from "reactstrap"
+import React, { useState } from "react";
+import { Col, Container, Row } from "reactstrap";
 
-import VerticalModal from "./VerticalModal/VerticalModal"
-import Feature from "./Feature/FeatureTypeFourth"
-import Oval from "../../../components/Frame/Frame"
-import { Email, Group } from "../../../components/Icons/Icons"
-import FeatureCard from "./FeatureCard/FeaturesTypeTwelve"
-import { Fade } from "react-awesome-reveal"
-import classes from "./FeaturesLayoutsTypeTwelve.module.css"
-import BgVideo from "../../../video/pexels-tea-oebel-6651197.webm"
+import VerticalModal from "./VerticalModal/VerticalModal";
+import Feature from "./Feature/FeatureTypeFourth";
+import Oval from "../../../components/Frame/Frame";
+import { Email, Group } from "../../../components/Icons/Icons";
+import FeatureCard from "./FeatureCard/FeaturesTypeTwelve";
+import { Fade } from "react-awesome-reveal";
+import classes from "./FeaturesLayoutsTypeTwelve.module.css";
+import BgVideo from "../../../video/pexels-tea-oebel-6651197.mp4";
 
 function FeaturesLayoutsTypeTwelve(props) {
-  const [modalShow, setModalShow] = useState(false)
+  const [modalShow, setModalShow] = useState(false);
   return (
     <React.Fragment>
       <section
@@ -87,6 +87,6 @@ function FeaturesLayoutsTypeTwelve(props) {
         />
       </section>
     </React.Fragment>
-  )
+  );
 }
-export default FeaturesLayoutsTypeTwelve
+export default FeaturesLayoutsTypeTwelve;

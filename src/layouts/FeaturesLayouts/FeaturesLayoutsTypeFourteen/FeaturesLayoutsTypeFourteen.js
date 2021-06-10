@@ -1,14 +1,14 @@
-import React from "react"
+import React from "react";
 
-import { Container, Col, Row } from "reactstrap"
-import Button from "../../../components/Button/Button"
-import image from "../../../img/Macbook.png"
-import { Fade } from "react-awesome-reveal"
-import classes from "./FeaturesLayoutsTypeFourteen.module.css"
+import { Container, Col, Row } from "reactstrap";
+import Button from "../../../components/Button/Button";
+import { Fade } from "react-awesome-reveal";
+import classes from "./FeaturesLayoutsTypeFourteen.module.css";
+import IemVideo from "../../../video/iem-step-video.mp4";
 
-const title = "Imagine All Your Certificate In One Place!"
+const title = "Imagine All Your Certificate In One Place!";
 const description =
-  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit odit repudiandae necessitatibus suscipit iure rem dolorum adipisci non  minima at?"
+  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit odit repudiandae necessitatibus suscipit iure rem dolorum adipisci non  minima at?";
 
 function FeaturesLayoutsTypeFourteen(props) {
   return (
@@ -33,28 +33,18 @@ function FeaturesLayoutsTypeFourteen(props) {
               </Col>
               <Col className={classes.secondLevel}>
                 <Fade up delay={50} triggerOnce={true}>
-                  <img src={image} alt="" style={{ position: "relative" }} />
-                  <div
+                  <video
+                    title="bussiness-farmer"
                     style={{
-                      position: "absolute",
-                      backgroundColor: "darkgrey",
-                      width: "74.4%",
-                      height: "76.95%",
-
-                      top: "14%",
-                      left: "12.78%",
+                      zIndex: 10,
+                      width: "100%",
                     }}
+                    autoPlay
+                    loop
+                    muted
                   >
-                    <h1
-                      style={{
-                        position: "relative",
-                        textAlign: "center",
-                        top: "40%",
-                      }}
-                    >
-                      the video will appear here
-                    </h1>
-                  </div>
+                    <source src={IemVideo}></source>
+                  </video>
                 </Fade>
               </Col>
               <Col
@@ -87,6 +77,6 @@ function FeaturesLayoutsTypeFourteen(props) {
         </div>
       </section>
     </React.Fragment>
-  )
+  );
 }
-export default FeaturesLayoutsTypeFourteen
+export default FeaturesLayoutsTypeFourteen;
