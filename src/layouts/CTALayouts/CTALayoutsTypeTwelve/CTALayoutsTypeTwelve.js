@@ -1,13 +1,13 @@
-import React from "react"
-import classes from "./CTALayoutsTypeTwelve.module.css"
+import React from "react";
+import classes from "./CTALayoutsTypeTwelve.module.css";
 
-import Button from "../../../components/Button/Button"
-import Logos from "./Logos/Logos"
-import { Container, Col, Row } from "reactstrap"
-import { Fade } from "react-awesome-reveal"
+import Button from "../../../components/Button/Button";
+import Logos from "./Logos/Logos";
+import { Container, Col, Row } from "reactstrap";
+import { Fade } from "react-awesome-reveal";
 
 const description =
-  "We feel so grateful with customer trust, and one them now is our shareholder."
+  "We feel so grateful with customer trust, and one them now is our shareholder.";
 function CTALayoutsTypeTwelve(props) {
   return (
     <React.Fragment>
@@ -46,7 +46,9 @@ function CTALayoutsTypeTwelve(props) {
                   <Button
                     link={true}
                     target={"_blank"}
-                    href={`https://wa.me/60146884403?text=I'm%20interested%20to%20talk%20more%20about%20Certick.`}
+                    href={
+                      "https://wa.me/60146884403?text=I'm%20interested%20to%20talk%20more%20about%20Certick."
+                    }
                     type={"submit"}
                     classes={"primary large simple w-100"}
                     value={"Whatsapp"}
@@ -58,6 +60,6 @@ function CTALayoutsTypeTwelve(props) {
         </div>
       </section>
     </React.Fragment>
-  )
+  );
 }
-export default CTALayoutsTypeTwelve
+export default CTALayoutsTypeTwelve;
