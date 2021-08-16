@@ -48,10 +48,18 @@ const Header = (props) => {
                 <Button
                   link={true}
                   target={"_blank"}
-                  href={"https://ecert.neuon.ai/iem/public_print_cert.php"}
+                  href={"https://csr.neuon.ai/user/user_login.php"}
+                  type={"submit"}
+                  classes={"primary large simple w-100"}
+                  value={"User"}
+                />
+                <Button
+                  link={true}
+                  target={"_blank"}
+                  href={"https://csr.neuon.ai/organization/org_login.php"}
                   type={"submit"}
                   classes={"secondary large simple w-100"}
-                  value={"Login"}
+                  value={"Organizer"}
                 />
               </div>
               <div className={classes.hiddenElements}>{/* <Socials /> */}</div>
